@@ -11,7 +11,7 @@ import pipeiros from "@/public/pipeiros.png";
 import quadwinkel from "@/public/quadwinkel.png";
 import steamz from "@/public/steamz.png";
 import steets from "@/public/steets.png";
-import wemetal from "@/public/wemetal.png";
+import wemetalProject from "@/public/wemetalProject.png";
 import medicare from "@/public/medicare.png";
 import devspace from "@/public/devspace.png";
 import djeventsproject from "@/public/djeventsproject.png";
@@ -138,7 +138,7 @@ export const PROJECTS_DATA = [
     description:
       "Contributed to frontend development for the WE Metal website, showcasing their metalworking services and products.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Statamic CMS", "GraphQL"],
-    imageUrl: wemetal,
+    imageUrl: wemetalProject,
     projectUrl: "https://www.we-metal.com/",
   },
   {
