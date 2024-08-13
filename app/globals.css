@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles with CSS variables */
+:root {
+  --scrollbar-width: 12px;
+  --scrollbar-track-color: #f1f1f1;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover-color: #555;
+}
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: #ffffff33;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width); /* Width of the scrollbar */
+  height: var(--scrollbar-width); /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* The track (part of the scrollbar that is always visible) */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color); /* Color of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2); /* Optional shadow effect */
+}
+
+/* The draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color); /* Color of the draggable part */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 3px solid var(--scrollbar-track-color); /* Optional border to separate thumb from track */
+}
+
+/* On hover, the draggable part of the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color); /* Color when hovering */
+}
+
+/* Apply custom scrollbar styles to elements with the class 'custom-scroll' */
+.custom-scroll::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 10px;
+  border: 3px solid var(--scrollbar-track-color);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.grecaptcha-badge {
+  @apply invisible;
+}
+
